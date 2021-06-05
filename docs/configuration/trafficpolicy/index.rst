@@ -1,4 +1,4 @@
-.. _qos:
+e.. _qos:
 
 ##############
 Traffic Policy
@@ -1150,7 +1150,7 @@ Once a traffic-policy is created, you can apply it to an interface:
 
 .. code-block:: none
 
-  set interfaces etherhet eth0 traffic-policy out WAN-OUT
+  set interfaces ethernet eth0 traffic-policy out WAN-OUT
 
 You can only apply one policy per interface and direction, but you could
 reuse a policy on different interfaces and directions:
@@ -1158,15 +1158,15 @@ reuse a policy on different interfaces and directions:
 .. code-block:: none
 
   set interfaces ethernet eth0 traffic-policy in WAN-IN
-  set interfaces etherhet eth0 traffic-policy out WAN-OUT
-  set interfaces etherhet eth1 traffic-policy in LAN-IN
-  set interfaces etherhet eth1 traffic-policy out LAN-OUT
+  set interfaces ethernet eth0 traffic-policy out WAN-OUT
+  set interfaces ethernet eth1 traffic-policy in LAN-IN
+  set interfaces ethernet eth1 traffic-policy out LAN-OUT
   set interfaces ethernet eth2 traffic-policy in LAN-IN
   set interfaces ethernet eth2 traffic-policy out LAN-OUT
-  set interfaces etherhet eth3 traffic-policy in TWO-WAY-POLICY
-  set interfaces etherhet eth3 traffic-policy out TWO-WAY-POLICY
-  set interfaces etherhet eth4 traffic-policy in TWO-WAY-POLICY
-  set interfaces etherhet eth4 traffic-policy out TWO-WAY-POLICY
+  set interfaces ethernet eth3 traffic-policy in TWO-WAY-POLICY
+  set interfaces ethernet eth3 traffic-policy out TWO-WAY-POLICY
+  set interfaces ethernet eth4 traffic-policy in TWO-WAY-POLICY
+  set interfaces ethernet eth4 traffic-policy out TWO-WAY-POLICY
 
 Getting queueing information
 ----------------------------
